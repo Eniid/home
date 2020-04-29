@@ -1,0 +1,39 @@
+.page_content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+}
+
+
+.link {
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+.infos {
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+    background-color: coral;
+
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 640px) {
+    .page_content{
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 100%;
+    }
+
+}

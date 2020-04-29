@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    @include tfl;
+    font-size: 16px;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+h1 {
+    position: fixed;
+    top: 1.75em;
+    right: 5em;
+}
+
+h2 {
+    @include tfr;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+p{
+    padding: 1rem 0;
+    padding-bottom: 1rem ;
+    line-height: 1.25em;
+}
+
+
+img {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+    transition: .5s;
+
+}
+
+img:hover {
+    transform: rotate(20deg);
+    transition: .5s;
+}

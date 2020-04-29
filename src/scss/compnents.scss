@@ -1,0 +1,92 @@
+.link a {
+    display: block;
+    width: 12rem;
+    margin: 50px auto;
+    padding: 1.5rem 2rem;
+    border: #000 solid 2px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s;
+}
+
+
+.info {
+    color: #fff;
+}
+
+
+.ins {
+    background : linear-gradient(#F2C50C, #F8B90E);
+    background-size: cover;
+    color: #000;
+}
+
+
+.cv {
+    background: linear-gradient(#4E5F79, #35395A);
+}
+
+.pf {
+    background : linear-gradient(#F99B96, #DA6A74);
+    background-size: cover;
+}
+
+
+.info div {
+    margin: 0 auto;
+    width: 60%;
+    max-width: 350px;
+}
+
+.info a {
+    margin-right: 5px;
+    margin-top: 3em;
+    padding: .3rem 1.2em;
+    border: #fff 1px solid;
+    border-radius: 3px;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.ins a {
+    color: #000;
+    border-color: #000;
+}
+
+
+.pf_link:hover {
+    border-color: #DA6A74;
+    color: #DA6A74;
+    transition: .2s;
+}
+
+.cv_link:hover {
+    border-color: #4E5F79;
+    color: #4E5F79;
+    transition: .2s;
+}
+
+
+.ins_link:hover {
+    border-color:#F2C50C;
+    color: #F2C50C;
+    transition: .2s;
+}
+
+@media screen and (max-width: 640px) {
+    .link a {
+        display: block;
+        padding: 1rem 1.5rem;
+        margin: 30px auto;
+        font-size: 1em;
+        transition: .2s;
+    }
+
+    .link {
+        margin: 70px auto 30px;
+    }
+
+}
