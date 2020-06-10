@@ -9,9 +9,15 @@
     font-size: 1.2em;
     text-align: center;
     text-decoration: none;
-    transition: .2s;
+    transition: transform .2s;
+    will-change: transform;
+    
 }
 
+.link a:hover {
+    box-shadow: -1px 1px 7px 0px #0000001f;
+    transform: scale(1.02);
+}
 
 .info {
     color: #fff;
@@ -42,20 +48,29 @@
 }
 
 .info a {
+    display: inline-block;
     margin-right: 5px;
-    margin-top: 3em;
+    margin-top: .5em;
     padding: .3rem 1.2em;
     border: #fff 1px solid;
     border-radius: 3px;
     color: #fff;
     font-size: .8rem;
+    transform: scale(1);
+
+    transition: transform .2s;
+
+}
+
+.info a:hover {
+    box-shadow: -1px 1px 7px 0px #0000001f;
+    transform: scale(1.06);
 }
 
 .ins a {
     color: #000;
     border-color: #000;
 }
-
 
 .pf_link:hover {
     border-color: #DA6A74;
@@ -89,4 +104,28 @@
         margin: 70px auto 30px;
     }
 
+}
+
+@media screen and (max-height: 650px) {
+    .link a {
+        display: block;
+        padding: .5rem 1rem;
+        margin: 30px auto;
+        font-size: 1em;
+        transition: .2s;
+    }
+
+    .link {
+        margin: .6rem auto .6rem;
+    }
+
+    img, h1 {
+        position: absolute !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+    }
 }
