@@ -31,6 +31,10 @@ p{
     line-height: 1.25em;
 }
 
+b{
+    @include tfr;
+}
+
 
 img {
     position: fixed;
